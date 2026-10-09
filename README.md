@@ -153,5 +153,5 @@ Os testes verificam, entre outros pontos:
 ---
 
 <p align="center">
-  Feito com 💙 para a disciplina de <b>[Nome da disciplina]</b> · [Instituição] · 2026
+
 </p>
