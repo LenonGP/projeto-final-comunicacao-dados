@@ -1,0 +1,21 @@
+T3 - Correcao de erros com Hamming(7,4) [teste em SOFTWARE]
+Palavra: [p1 p2 d1 p3 d2 d3 d4]; corrige 1 bit por palavra de 7 bits.
+
+Exemplo: dados 1011 -> palavra 0110011
+         bit 5 invertido -> 0110111 -> sindrome aponta posicao 5 -> dados 1011
+
+(c) Fluxo A = "OLA": 8 palavras de 7 bits (56 bits)
+    Posicoes invertidas: [2 10 21 22 32 42 44 56]
+    Palavras corrigidas: 8 | CRC: VALIDO | Mensagem: "OLA"
+
+Caso                                               Casos  Recuperado      Errado
+--------------------------------------------------------------------------------
+(a) 1 erro, 16 palavras x 7 posicoes                 112         112           0
+(b) 2 erros, 16 palavras x 21 pares                  336           0         336
+(c) fluxo A, 1 erro em cada palavra                    1           1           0
+--------------------------------------------------------------------------------
+(b2) Fluxo A, 2 erros na mesma palavra: CRC sinalizou 168 de 168 casos
+
+Resultado T3: PASSOU
+Limite do codigo: distancia minima 3 -> corrige 1 erro por palavra de 7 bits;
+com 2 erros na mesma palavra a decodificacao erra, e o CRC-8 detecta o residuo.

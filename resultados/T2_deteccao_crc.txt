@@ -1,0 +1,27 @@
+T2 - Deteccao de erros com CRC-8 [teste em SOFTWARE]
+Polinomio gerador: G(x) = x^8 + x^2 + x + 1 (0x07)
+
+Fluxo A = "OLA" (24 bits)
+Dados : 111100100011001010000010
+CRC   : 11101110
+Total : 32 bits
+
+(a) Sem erro: CRC VALIDO
+
+Exemplo: bit 10 invertido -> resto = 10000110 -> CRC INVALIDO
+
+Caso                                    Injetados Detectados   Nao det.
+------------------------------------------------------------------------
+(a) sem erro (falso positivo?)                  1          0          0
+(b) 1 bit, cada posicao                        32         32          0
+(c) 2 bits, todos os pares                    496        496          0
+(d) rajada de 2 bits                           31         31          0
+(d) rajada de 3 bits                           60         60          0
+(d) rajada de 4 bits                          116        116          0
+(d) rajada de 5 bits                          224        224          0
+(d) rajada de 6 bits                          432        432          0
+(d) rajada de 7 bits                          832        832          0
+(d) rajada de 8 bits                         1600       1600          0
+------------------------------------------------------------------------
+
+Resultado T2: PASSOU (nenhum erro injetado passou como valido)

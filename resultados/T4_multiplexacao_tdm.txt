@@ -1,0 +1,17 @@
+T4 - Multiplexacao TDM isolada [teste em SOFTWARE]
+Quadro = [SYNC 01111110 | slot A (7 bits) | slot B (7 bits)]
+
+Fluxo A = "OLA": 111100100011001010000010
+Fluxo B = "UFS": 101010100110001011001010
+Quadros TDM: 4 de 22 bits -> 88 bits multiplexados
+
+(a) Sem deslocamento: offset = 0 | erros A = 0 | erros B = 0 | A = "OLA" | B = "UFS"
+(b) Lixo antes do primeiro quadro:
+     1 bits de lixo -> offset encontrado =  1 | erros A = 0 | erros B = 0
+     5 bits de lixo -> offset encontrado =  5 | erros A = 0 | erros B = 0
+    13 bits de lixo -> offset encontrado = 13 | erros A = 0 | erros B = 0
+    22 bits de lixo -> offset encontrado = 22 | erros A = 0 | erros B = 0
+    40 bits de lixo -> offset encontrado = 40 | erros A = 0 | erros B = 0
+(c) Slot B comparado com A: 7 bits diferentes; slot A comparado com B: 7 bits diferentes
+
+Resultado T4: PASSOU

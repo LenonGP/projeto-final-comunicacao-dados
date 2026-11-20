@@ -1,0 +1,42 @@
+T6 - Sistema integrado pelo modem [SIMULACAO (sinal direto ao receptor, SNR = Inf dB)]
+Fluxo A = "OLA" | Fluxo B = "UFS" | RB = 100 bps | Fp = 2000 Hz | Fa = 8000 Hz
+Carga TDM: 176 bits (22 bytes) | quadro do modem: 296 simbolos | sinal: 2.96 s
+
+Rodada  1: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  2: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  3: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  4: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  5: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  6: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  7: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  8: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada  9: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+Rodada 10: pico 1.000 | l = 22 | aviso SFD: nao | erros no quadro TDM:   0
+           A: "OLA" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+           B: "UFS" erros  0/56 ->  0/24 apos Hamming (0 corr.), CRC valido
+
+=================== RESUMO (SIMULACAO (sinal direto ao receptor, SNR = Inf dB)) ===================
+Rodadas: 10
+Fluxo    BER antes (Ham.)   BER depois         Msg correta    CRC valido  
+A        0.00%              0.00%              10/10          10/10       
+B        0.00%              0.00%              10/10          10/10       
+Casos com CRC valido mas mensagem errada (nao detectados): 0
+==========================================================

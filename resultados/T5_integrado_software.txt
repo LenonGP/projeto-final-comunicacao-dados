@@ -1,0 +1,21 @@
+T5 - Sistema integrado com erros controlados [teste em SOFTWARE]
+
+Fluxo A = "OLA" | Fluxo B = "UFS"
+Por fluxo: 24 bits de dados -> 32 com CRC -> 56 com Hamming
+Quadro multiplexado: 8 quadros TDM, 176 bits
+
+Caso                                     Fluxo  Msg      Iguais?   Corrigidos CRC      
+--------------------------------------------------------------------------------------
+(a) sem erro                             A      "OLA"    sim       0          valido   
+                                         B      "UFS"    sim       0          valido   
+(b) 1 erro na palavra 3 de A             A      "OLA"    sim       1          valido   
+                                         B      "UFS"    sim       0          valido   
+                                         posicoes invertidas no quadro TDM: 57
+(c) 2 erros na palavra 5 de B            A      "OLA"    sim       0          valido   
+                                         B      "UFW"    nao       1          INVALIDO 
+                                         posicoes invertidas no quadro TDM: [105 109]
+--------------------------------------------------------------------------------------
+
+Resultado T5: PASSOU
+Em (c) o fluxo B nao e corrigivel (2 erros na mesma palavra) e o CRC o sinaliza,
+enquanto o fluxo A continua correto: os fluxos sao independentes.

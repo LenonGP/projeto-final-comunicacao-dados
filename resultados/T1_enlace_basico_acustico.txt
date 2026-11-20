@@ -1,0 +1,17 @@
+T1 - Enlace basico [TRANSMISSAO ACUSTICA, modo acustico]
+Mensagem "OLA" | RB = 100 bps | quadro 144 simbolos | 1.44 s
+
+Rodada  1 (pico 0.125): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "OL" 8 erros
+Rodada  2 (pico 0.128): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "O?a" 2 erros
+Rodada  3 (pico 0.132): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "?L" 9 erros
+Rodada  4 (pico 0.120): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "OLa" 1 erros
+Rodada  5 (pico 0.120): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "OLA" 0 erros
+Rodada  6 (pico 0.124): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "oLa" 2 erros
+Rodada  7 (pico 0.126): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "OL" 8 erros
+Rodada  8 (pico 0.139): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "OL" 8 erros
+Rodada  9 (pico 0.125): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "?\???]" 4 erros
+Rodada 10 (pico 0.123): COM pre-proc. "OLA" 0 erros | SEM pre-proc. "OLA" 0 erros
+
+                       Erros medios   BER media    Tamanho certo    Avisos SFD  
+Com pre-processamento  0.00           0.00%        10/10            0/10        
+Sem pre-processamento  4.20           17.50%       5/10             6/10        

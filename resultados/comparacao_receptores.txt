@@ -1,0 +1,14 @@
+Parte 1 [SIMULACAO] - quadro integrado de 176 bits, 80 posicoes de inicio
+Receptor     SNR      Quadros sem erro       BER media no quadro   
+receptor_2   40       62/80                  3.80%                 
+receptor_3   40       80/80                  0.00%                 
+receptor_2   10       5/80                   7.40%                 
+receptor_3   10       80/80                  0.00%                 
+receptor_2   5        0/80                   24.11%                
+receptor_3   5        80/80                  0.00%                 
+
+Parte 2 [TRANSMISSAO ACUSTICA] - gravacoes do Marco 2 ("OLA", 100 bps)
+Arquivo                    receptor_2             receptor_3            
+captura_rb100_r1.wav       "ODA" 1 erros          "OLA" 0 erros         
+captura_rb100_r2.wav       "OLa" 1 erros          "OLA" 0 erros         
+captura_rb100_r3.wav       "Ola" 2 erros          "OLA" 0 erros         
